@@ -1,0 +1,386 @@
+body {
+  background-color: black;
+}
+
+/* logo */
+.logo{
+  margin: 30px 15px 30px 15px;
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* logo */
+.logo img{
+  width: 100%;
+  height: auto;
+}
+
+/* ---------------------------- index page ---------------------------- */
+
+/*  index:intro */
+.intro{
+  color: #FFFFFF;
+}
+
+/*  index:intro */
+.floated{
+  float:right;
+  margin: 20px;
+  box-shadow: 10px 10px lightblue;
+  width: 45%;
+  height: auto;
+}
+
+.floated img{
+  width: 100%;
+  height: auto;
+}
+
+/*  index:intro */
+.has-dropcap:first-letter {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 6rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.2em 0;
+}
+
+/* index: intro */
+.dropcap {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  background: #303030;
+  color: #FDF9F2;
+  float: left;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0.1em 0.1em 0.2em 0;
+  padding: 0.1em;
+}
+
+/* index: intro */
+.dropcap:before,
+.dropcap:after {
+  content: "";
+  display: block;
+}
+
+/* index: intro */
+.dropcap:before {
+  margin-top: -0.2em;
+}
+
+/* index: intro */
+.dropcap:after {
+  margin-bottom: -0.15em;
+}
+
+/* index: cleared rule */
+.clearedRule{
+  clear: both;
+}
+
+/* index: intro */
+.section{
+  font-size: x-large;
+}
+
+/* index: reasonsContainer */
+.reasonsContainer{
+  background: green;
+  transition: width 2s;
+}
+
+/* index: reasonsContainer */
+.reasonsContainer:hover{
+  background: red;
+}
+
+/* index: reasons */
+.reasons{
+  color: #FFFFFF;
+  text-shadow: 2px 2px 5px red;
+  text-align: center;
+  clear: both;
+  -ms-transform: skewY(20deg);
+  transform: skewY(20deg);
+  position: relative;
+  animation-name: bug;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;  
+}
+
+/* index: reasons */
+@keyframes bug {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);} 
+}
+
+/* index: reasons */
+div > h5:first-of-type{
+  color: #FFFF00;
+}
+
+/* index: reasons */
+div > h5:last-of-type{
+  color: #DDA0DD;
+}
+
+/* clock container */
+.clockContainer{
+  text-align: center;
+  color: white;
+}
+
+/* ---------------------------- gallery page ---------------------------- */
+
+/* gallery: floated container */
+.media{
+  float: left;
+  width: 30%;
+  height: 20vw;
+  border: solid;
+  overflow: hidden;
+}
+
+/* gallery: media */
+.media img, video{
+  width: 100%;
+  height: auto;
+}
+
+/* gallery: image */
+#opacity{
+  opacity: 0.8;
+}
+
+/* audio clip */
+.audioContainer{
+  margin: 20px;
+  padding: 20px;
+  color: white;
+  clear: both;
+  display: flex;
+  justify-content: center;
+}
+
+.audioText{
+  margin: 20px;
+  padding: 20px;
+}
+
+.audio{
+  margin: 20px;
+  padding: 20px;
+}
+
+/* ---------------------------- contact page ---------------------------- */
+
+/* both columns*/
+.bothColumns{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+/* left column */
+.leftColumn{
+  width: 30vw;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  border: solid;
+  border-color: white;
+  border-radius: 25px;
+  background-clip: content-box;
+}
+
+/* map container */
+.resize{
+  width: 100%;
+  height: auto;
+}
+
+/* map */
+.resize img{
+  width: 100%;
+  height: auto;
+}
+
+/* right column */
+.rightColumn{
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 10px;
+  border: solid;
+  border-color: white;
+  border-radius: 25px;
+  background-clip: content-box;
+}
+
+/* right column A */
+.rightColumnA{
+  width: 45%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* button container */
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+}
+
+/* submit button */
+.submitButton{
+  width: 125px;
+}
+
+/* right column B */
+.rightColumnB{
+  width: 45%;
+}
+
+/* right column input sizes */
+.rightColumn input, .rightColumn textarea{
+  width: 100%;
+}
+
+/* right column focusing */
+input:focus {
+  background-color: yellow;
+}
+
+/* ---------------------------- crossref page ---------------------------- */
+
+/* crossref: grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 10px;
+  gap: 5px 25px;
+}
+
+/* crossref: grid */
+.grid-item {
+  background-color: hsla(0 20% 70% / 30%);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 40px 0px 0px 0px;
+  font-size: 20px;
+  text-align: left;
+}
+
+/* footer */
+.footer{
+  clear: both;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+/* ---------------------------- navicon ---------------------------- */
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.p-menu1{
+  height: 100%;
+}
+
+.hamburger1 {
+  height: 45px;
+  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  z-index: 120;
+}
+
+.hamburger1 div {
+  background-color: rgb(61, 61, 61);
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin-top: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+  height: 340px;
+}
+
+.menu1 {
+  width: 100%;
+  background-color: #02173F;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: 1fr repeat(4, 0.5fr);
+  grid-row-gap: 25px;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height .4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu1 a:first-child {
+  margin-top: 40px;
+}
+
+.menu1 a:last-child {
+  margin-bottom: 40px;
+}
+
+.link1 {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  font: 700 20px 'Oswald', sans-serif;
+}
+
+.link1:hover {
+  background-color: #fff;
+  color: rgb(61, 61, 61);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,102 @@
+<!-- T00705586 Mirko August 2022 -->
+<!-- html for WhiskeySixBBQ.com, contact page -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Whiskey Six BBQ</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+<!-- font -->
+<body style="font-family: sans-serif">
+
+<!-- navicon -->
+ <nav id="navbar" class="navigation" role="navigation">
+    <input id="toggle1" type="checkbox" />
+    <label class="hamburger1" for="toggle1">
+      <div class="top"></div>
+      <div class="meat"></div>
+      <div class="bottom"></div>
+    </label>
+  
+    <nav class="menu1">
+      <a class="link1" href="index.html">Home</a>
+      <a class="link1" href="gallery.html">Gallery</a>
+      <a class="link1 active" href="contact.html">Contact</a>
+      <a class="link1" href="crossref.html">Cross-Reference</a>
+    </nav>
+</nav>
+
+<!-- logo -->
+<div class = "logo">
+  <a href=index.html>
+    <img src = "images/logo.png" width = 500>
+  </a>
+</div>
+
+<!-- both columns -->
+<div class = "bothColumns">
+
+  <!-- left column, contact info -->
+    <div class = "leftColumn">
+        <h3>Contact Info</h3>
+        <p>Whiskey Six BBQ</p>
+        <p>826 Renfrew St</p>
+        <p>Vancouver, BC</p>
+        <p>V5K 4B6</p>
+        <p>555-555-5555</p>
+      <div class = "resize">
+        <img src = "images/map.png">
+      </div>
+    </fieldset>
+  </div>
+
+  <!-- right column, form -->
+  
+    <form id = "form" action="bbqcommentwebsite.com" method="post" onsubmit="return validateForm()">
+      <div class = "rightColumn">
+        <div class = "rightColumnA">
+          <label for="fName">First name:</label><br>
+          <input type="text" id="fName" name="fName" value=" " required><br><br><br>
+          
+          <label for="lName">Last name:</label><br>
+          <input type="text" id="lName" name="lName" value=" " required><br><br><br>
+      
+          <label for="email">E-mail:</label><br>
+          <input type="text" id="email" name="email" required><br><br><br>
+          
+          <label for="phone">Phone:</label><br>
+          <input type="text" id="phone" name="phone" required><br><br><br>
+
+          <div class = "buttonContainer">
+            <div class ="submitButton">
+              <input type="submit" value="Submit Comment">
+            </div>
+          </div>
+        </div>
+        <div class = "rightColumnB">
+          <p>Leave a comment!</p>
+          <textarea name="message" rows="30" cols="30">
+          </textarea>
+        </div>
+      </div>
+    </form>
+  
+</div>
+  
+<!-- footer -->
+<div class = "footer">
+  <p>Website last updated August 2022</p>
+</div>
+
+<script type="text/javascript" src="formsubmit.js"></script>
+
+</body>
+
+</html>
